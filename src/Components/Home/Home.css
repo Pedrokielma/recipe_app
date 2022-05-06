@@ -5,5 +5,84 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-behavior: inherit;
+    
+
+   
+}
+.home-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: inherit;
+    
+    
 }
 
+.home-div .fuits-image{
+   
+    background-repeat: no-repeat;
+    position: absolute;
+    
+}
+.logo-image{
+    z-index: 2;
+    
+    position: relative;
+    top: 30px;
+    right: 150px;
+}
+
+.title{
+ 
+    bottom: 400px;
+    color: white;
+    z-index: 1;
+    
+}
+.title h1{
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    font-weight: 500;
+    
+   
+}
+.title h1 .second-title{
+    font-size: 7rem;
+    z-index: 1;
+    bottom: 40px;
+    position: relative;
+}
+.title h2{
+    font-size: 2.2rem;
+
+    z-index: 1;
+    bottom: 40px;
+    position: relative;
+    font-weight: 500;
+}
+
+
+.request-info{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+    width: 30px;
+    height: 100px;
+   
+    
+}
+.request-info a{
+    text-decoration: none;
+    color: black;
+}

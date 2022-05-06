@@ -19,10 +19,10 @@ function Navbar() {
     </section>
     </nav>
     <nav className='side-navbar'>
-    <div>
+    
     <p>epa</p>
        
-    </div>
+    
 
     </nav>
     </>
