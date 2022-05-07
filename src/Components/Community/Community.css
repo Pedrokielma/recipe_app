@@ -1,4 +1,97 @@
 .community-section{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0px 60px 0px 60px ;
+   
+
+    background-color: rgb(244, 240, 240);
 }
+
+.community-posts{
+display: flex;
+z-index: 1;
+}
+
+.post-one{
+    justify-content: flex-end;
+    margin: 120px 80px 0px 10px;
+}
+
+.post-two{
+    margin: 0px 10px 0px 70px;
+}
+.post-three{
+    justify-content: flex-end;
+    margin: 0px 65px 60px 0px;
+}
+
+
+.post-content{
+    height: 230px;
+    width: 230px;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+}
+
+.image-div{
+    height: 230px;
+    width: 230px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0px 10px 0px 10px;
+    
+   
+    
+}
+/* .image-div > .insta-logo {
+    justify-content: flex-end;
+    align-items: center;
+} */
+.image-div .insta-logo{
+    z-index: 1;
+   
+    
+   
+}
+
+.image-post{
+    height: 210px;
+    width: 210px;
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.icons-background{
+   position: absolute;  
+left: 10%;
+right: 10%;
+height: 400px;
+
+}
+.big-points{
+    position: absolute;
+    right: 15%;
+    top: 40px;
+
+    
+}
+.lines{
+    position: absolute;
+    right: 0;
+}
+.small-points{
+    position: absolute;
+    left: 4%;
+    bottom: 0;
+}
+

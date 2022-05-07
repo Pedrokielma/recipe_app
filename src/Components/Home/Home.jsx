@@ -1,5 +1,5 @@
 import React from 'react'
-import fruitsImage from '../../images/rezel-apacionado-MZfS19xrrz0-unsplash-removebg-preview.png'
+import fruitsImage from '../../images/vegetebles.png'
 import './Home.css'
 import logo from '../../images/stamp.svg'
 
