@@ -1,0 +1,32 @@
+
+.text-map{
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    margin: 60px
+
+    
+}
+
+.text-map h2{
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    width: 300;
+    margin-left: 20px;
+}
+
+.text-map div{
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    margin-top: 40px;
+    margin-right: 80px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.text-map p{
+    text-align: left;
+    margin: 20px;
+}

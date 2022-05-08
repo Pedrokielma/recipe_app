@@ -11,6 +11,47 @@
     background-color: rgb(244, 240, 240);
 }
 
+.commuity-title{
+    position: absolute;
+    margin-bottom: 600px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+.commuity-title h2{
+    font-size: 4rem;
+    font-weight: 500;
+    height: 200px;
+    /* display: flex;
+    flex-direction: column; */
+
+    
+}
+.commuity-title h2 .second-community-title{
+    z-index: 1;
+    /* bottom: 25px; */
+    position: relative;  
+    display: flex;
+}
+.first-community-title{
+display: flex;
+
+}
+.commuity-title a{
+    display: flex;
+}
+.commuity-title h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
 .community-posts{
 display: flex;
 z-index: 1;
@@ -35,7 +76,13 @@ z-index: 1;
     width: 230px;
     background-color: white;
     margin: 0px 10px 0px 10px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
+
 
 .image-div{
     height: 230px;
@@ -93,5 +140,14 @@ height: 400px;
     position: absolute;
     left: 4%;
     bottom: 0;
+}
+
+.comments-likes-div{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.comments-likes{
+    display: flex;
 }
 

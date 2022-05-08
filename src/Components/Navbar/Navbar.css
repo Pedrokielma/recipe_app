@@ -28,5 +28,6 @@
     width: 60px;
     background-color: rgba(250, 235, 215, 0);
     position:fixed;
+    z-index: 1000;
 
 }

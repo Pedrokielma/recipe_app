@@ -10,11 +10,11 @@ import bigPoints from '../../images/big-points.png'
 function Community() {
   return (
     <div className='community-section'>
-    {/* <div className='commuity-title'>
-    <h2>MEET OUR COMMUNITY</h2>
+    <div className='commuity-title'>
+    <h2><span className='first-community-title'>MEET OUR</span><span className='second-community-title'>COMMUNITY</span></h2>
     <a href="/">KNOW MORE</a>
     <h4>LOREM IPSUM DOLOR SIT AMET ERNUT TEMPARTERO SERTU PER NABORE EN TORNA ENTALTO</h4>
-    </div> */}
+    </div>
 
     <div className='icons-background'>
     <img className='insta-icons big-points' src={bigPoints} alt="icon" />
@@ -31,10 +31,15 @@ function Community() {
     <div className='post-content'>
       <h5>@buzzfeedfood</h5>
       <p>It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto</p>
+      <div className='comments-likes-div'>
       <div className='comments-likes'>
-     <img className='insta-icons' src={comment} alt="comment" />
-     
-     <img className='insta-icons' src={like} alt="like" />
+        <img className='insta-icons' src={comment} alt="commetn" />
+        <p>152</p>
+        </div>
+      <div className='comments-likes'>
+         <img className='insta-icons' src={like} alt="like" />
+         <p>18,2K</p>
+      </div>
       </div>
     </div>
 
@@ -43,9 +48,15 @@ function Community() {
     <div className='post-content'>
       <h5>@love_food</h5>
       <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood</p>
+      <div className='comments-likes-div'>
       <div className='comments-likes'>
-      <img className='insta-icons' src={comment} alt="comment" />
-      <img className='insta-icons' src={like} alt="like" />
+        <img className='insta-icons' src={comment} alt="commetn" />
+        <p>152</p>
+        </div>
+      <div className='comments-likes'>
+         <img className='insta-icons' src={like} alt="like" />
+         <p>18,2K</p>
+      </div>
       </div>
     </div>
     <div className='image-div'>
@@ -57,9 +68,15 @@ function Community() {
     <div className='post-content'>
       <h5>@buzzfeedfood</h5>
       <p>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)</p>
+      <div className='comments-likes-div'>
       <div className='comments-likes'>
-     <img className='insta-icons' src={comment} alt="commetn" />
-     <img className='insta-icons' src={like} alt="like" />
+        <img className='insta-icons' src={comment} alt="commetn" />
+        <p>152</p>
+        </div>
+      <div className='comments-likes'>
+         <img className='insta-icons' src={like} alt="like" />
+         <p>18,2K</p>
+      </div>
       </div>
     </div>
     <div className='image-div'>
