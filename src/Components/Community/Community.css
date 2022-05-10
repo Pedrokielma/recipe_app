@@ -13,8 +13,8 @@
 
 .commuity-title{
     position: absolute;
-    margin-bottom: 600px;
-    margin-left: 100px;
+   bottom: -300px;
+   left: 200px;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -30,22 +30,37 @@
     
 }
 .commuity-title h2 .second-community-title{
-    z-index: 1;
-    /* bottom: 25px; */
-    position: relative;  
+    position: relative;
     display: flex;
 }
 .first-community-title{
 display: flex;
+z-index: 1;
+
+position: relative;
+top: 25px; 
 
 }
 .commuity-title a{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDAC9;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 30px;
+
+    position: relative;
+    z-index: 2;
+    bottom: 30px;
 }
 .commuity-title h4{
     font-size: 1.4rem;
     font-weight: 500;
+    text-align: left;
 }
+
 
 
 
@@ -82,6 +97,35 @@ z-index: 1;
     justify-content: space-between;
     flex-direction: column;
 }
+.post-content h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+}
+.post-description{
+    text-align: left;
+    margin: 10px;
+   
+}
+.comments-likes-div{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.comments-likes{
+    display: flex;
+}
+.comments-likes p{
+    margin: 5px;
+}
+
+
+
+
+
+
 
 
 .image-div{
@@ -101,10 +145,7 @@ z-index: 1;
     align-items: center;
 } */
 .image-div .insta-logo{
-    z-index: 1;
-   
-    
-   
+    z-index: 1;  
 }
 
 .image-post{
@@ -118,6 +159,11 @@ z-index: 1;
     background-size: cover;
     
 }
+
+
+
+
+
 .icons-background{
    position: absolute;  
 left: 10%;
@@ -129,7 +175,6 @@ height: 400px;
     position: absolute;
     right: 15%;
     top: 40px;
-
     
 }
 .lines{
@@ -142,12 +187,5 @@ height: 400px;
     bottom: 0;
 }
 
-.comments-likes-div{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-}
-.comments-likes{
-    display: flex;
-}
+
 

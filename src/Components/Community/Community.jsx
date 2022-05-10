@@ -30,7 +30,7 @@ function Community() {
     
     <div className='post-content'>
       <h5>@buzzfeedfood</h5>
-      <p>It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto</p>
+      <p className='post-description'>It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto</p>
       <div className='comments-likes-div'>
       <div className='comments-likes'>
         <img className='insta-icons' src={comment} alt="commetn" />
@@ -47,7 +47,7 @@ function Community() {
     <div className='community-posts post-two'>
     <div className='post-content'>
       <h5>@love_food</h5>
-      <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood</p>
+      <p className='post-description'>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood</p>
       <div className='comments-likes-div'>
       <div className='comments-likes'>
         <img className='insta-icons' src={comment} alt="commetn" />
@@ -67,7 +67,7 @@ function Community() {
     <div className='community-posts post-three'>
     <div className='post-content'>
       <h5>@buzzfeedfood</h5>
-      <p>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)</p>
+      <p className='post-description'>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)</p>
       <div className='comments-likes-div'>
       <div className='comments-likes'>
         <img className='insta-icons' src={comment} alt="commetn" />
