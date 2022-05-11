@@ -3,6 +3,7 @@
     font-weight: 500;
     line-height: 60px;
     text-align: left;
+    z-index: 1;
    
 }
 .one-line{
