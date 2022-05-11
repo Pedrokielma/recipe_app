@@ -1,11 +1,12 @@
 import React from 'react'
 import './Location.css'
+import Title from '../../Components/Title/Title'
 
 function Location() {
   return (
     <div>
     <div className='text-map'>
-        <h2>LOCATION</h2>
+    <Title content='LOCATION'/>
         <div> 
         <p>
         12 Upper St. Martin’s Lane WC2H 9FB, London

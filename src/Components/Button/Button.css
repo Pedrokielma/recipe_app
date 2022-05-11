@@ -1,0 +1,13 @@
+.pink-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDAC9;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}

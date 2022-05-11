@@ -1,16 +1,23 @@
-import React,  { useState, useEffect }  from 'react'
-import './Menu.css'
+
 import axios from "axios";
+import React,  { useState, useEffect}  from 'react'
+import './Menu.css'
+import Title from '../../Components/Title/Title'
+import Button from '../../Components/Button/Button'
+
 
 function Menu() {
   const [dishes, setDishes] = useState([]);
 
 
+ 
   const fetchDishes = async () => {
     try {
       let response = await axios.get(`https://studiographene-exercise-api.herokuapp.com/foods`);
+      
+     
       setDishes(response.data);
-      console.log(dishes);
+      
     } catch (error) {
       console.log(error);
     }
@@ -20,12 +27,18 @@ function Menu() {
     fetchDishes();
     
   }, []);
-
+ 
 
   return (
     <div className='menu'>
+    <div className="menu-title">
+    <Title lines='one-line' content='OUR MENU'/>
+    <Button link="/" content='KNOW MORE'/>
+    </div>
+
     <div className='menu-sections starter'>
-    <h2>STARTERS</h2>
+    <Title  lines='one-line position-titles' content='STARTERS'/>
+
     {
       dishes.map((dishe)=>{
        if(dishe.type === 'starters') return (
@@ -40,9 +53,13 @@ function Menu() {
 
 
     }
+  
     </div>
+    <hr />
+
     <div className='menu-sections main-course'>
-    <h2><span className='main-course-first'>MAIN</span> <span className='main-course-second' >COURSES</span> </h2>
+    <Title  lines='two-lines position-titles' content='MAIN COURSES'/>
+
     {
       dishes.map((dishe)=>{
        if(dishe.type === 'main_courses') return (
@@ -57,9 +74,11 @@ function Menu() {
 
 
     }
+
     </div>
+    <hr />
     <div className='menu-sections side'>
-    <h2>SIDES</h2>
+    <Title lines='one-line position-titles' content='SIDES'/>
     {
       dishes.map((dishe)=>{
        if(dishe.type === 'sides') return (
@@ -75,8 +94,10 @@ function Menu() {
 
     }
     </div>
+    <hr />
     <div className='menu-sections dessert'>
-    <h2>DESSERTS</h2>
+    <Title lines='one-line position-titles' content='DESSERTS'/>
+
     {
       dishes.map((dishe)=>{
        if(dishe.type === 'desserts') return (
@@ -87,7 +108,6 @@ function Menu() {
        </>
         )
       })
-
 
 
     }

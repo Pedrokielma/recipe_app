@@ -8,49 +8,45 @@
     
 }
 
-.menu h2{
 
-     font-size: 4rem;
-    font-weight: 500;
+.menu-title{
+    position: absolute;
+    right: 40.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .menu-sections{
     width: 25%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    justify-content: flex-end;
+    
     
 }
 .starter{
+    
     margin-left: 100px;
+    margin-bottom: 300px; 
+}
+.main-course{
+    margin-bottom: 100px;
+}
+.side{
+    margin-bottom: 200px;
 }
 .dessert{
     margin-right: 60px;
+    margin-bottom: 300px;
+}
+.menu-sections *{
+    margin: 5px 10px 10px 5px ;
+    
+
 }
 
-.menu-sections h2{
-    display: flex;
-    
-}
-.menu-sections h2{
-    display: flex;
-    left: 40px;
-    
-}
-.main-course h2{
-    flex-direction: column;
-}
-.main-course-first{
-    z-index: 1;
-    /* bottom: 25px; */
-    position: relative;
-    top: 25px; 
-    display: flex;
-    display: flex;
-}
-.main-course-second{
-        display: flex;
-}
 
 
 .menu-sections h4{

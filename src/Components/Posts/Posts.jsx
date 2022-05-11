@@ -9,7 +9,7 @@ function Posts(props){
     const postImages = {
         backgroundImage: props.imagePost,
       }
-    const postClass = 'community-posts '
+    
      
       
 
@@ -35,7 +35,7 @@ function Posts(props){
               </div>
               <div className="comments-likes">
                 <img className="insta-icons" src={like} alt="like" />
-                <p>{props.likeNumbers}</p>
+                <p>{props.likesNumber}</p>
               </div>
             </div>
           </div>

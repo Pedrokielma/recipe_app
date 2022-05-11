@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding:0px 60px 0px 60px ;
+    padding:0px 60px 0px 60px;
    
 
     background-color: rgb(244, 240, 240);
@@ -20,45 +20,14 @@
     width: 300px;
     
 }
-.commuity-title h2{
-    font-size: 4rem;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: left;
-
-    /* display: flex;
-    flex-direction: column; */
-
-    
+.title-line{
+    border: 3px solid #FFDAC9;
+    position: absolute;
+    width: 85%;
+    top: 90px;
+    z-index: 0;
 }
-/* .commuity-title h2 .second-community-title{
-    position: relative;
-    display: flex;
-}
-.first-community-title{
-display: flex;
-z-index: 1;
 
-position: relative;
-top: 25px; 
-
-} */
-
-
-.commuity-title a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFDAC9;
-    text-decoration: none;
-    color: black;
-    width: 100px;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-
-}
 .commuity-title h4{
     font-size: 1.4rem;
     font-weight: 500;
