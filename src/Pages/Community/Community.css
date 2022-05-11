@@ -13,8 +13,8 @@
 
 .commuity-title{
     position: absolute;
-   bottom: -300px;
-   left: 200px;
+   bottom: -350px;
+   left: 300px;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -23,13 +23,15 @@
 .commuity-title h2{
     font-size: 4rem;
     font-weight: 500;
-    height: 200px;
+    line-height: 60px;
+    text-align: left;
+
     /* display: flex;
     flex-direction: column; */
 
     
 }
-.commuity-title h2 .second-community-title{
+/* .commuity-title h2 .second-community-title{
     position: relative;
     display: flex;
 }
@@ -40,7 +42,9 @@ z-index: 1;
 position: relative;
 top: 25px; 
 
-}
+} */
+
+
 .commuity-title a{
     display: flex;
     justify-content: center;
@@ -50,10 +54,10 @@ top: 25px;
     color: black;
     width: 100px;
     height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-    position: relative;
-    z-index: 2;
-    bottom: 30px;
+
 }
 .commuity-title h4{
     font-size: 1.4rem;
