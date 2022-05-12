@@ -34,7 +34,7 @@ function Menu() {
     <div className="menu-title">
     <hr className="menu-title-line"/>
     <Title lines='one-line' content='OUR MENU'/>
-    <Button link="/" content='KNOW MORE'/>
+    <Button color='pink-button' link="/" content='KNOW MORE'/>
     </div>
 
     <div className='menu-sections starter'>

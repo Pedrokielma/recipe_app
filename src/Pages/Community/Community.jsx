@@ -15,7 +15,7 @@ function Community() {
       <div className="commuity-title">
       <hr className="title-line" />
         <Title lines='two-lines' content='MEET OUR COMMUNITY'/>
-        <Button link="/" content='KNOW MORE'/>
+        <Button color='pink-button' link="/" content='KNOW MORE'/>
         <h4>
           LOREM IPSUM DOLOR SIT AMET ERNUT TEMPARTERO SERTU PER NABORE EN TORNA
           ENTALTO

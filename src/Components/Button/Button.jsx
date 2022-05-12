@@ -3,7 +3,7 @@ import './Button.css'
 
 function Button(props){
 
-    return  <a className='pink-button' link={props.herf}>{props.content}</a>
+    return  <a className={props.color} link={props.herf}>{props.content}</a>
   }
   
 

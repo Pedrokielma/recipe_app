@@ -6,6 +6,7 @@ import Community from "./Pages/Community/Community.jsx";
 import Location from "./Pages/Location/Location.jsx";
 import Menu from "./Pages/Menu/Menu.jsx";
 import Sidenav from  "./Components/Sidenav/Sidenav.jsx";
+import Collaborates from './Pages/Collaborates/Collaborates.jsx'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <Community />
      <Location />
      <Menu />
+     <Collaborates />
      
      
     </div>
