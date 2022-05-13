@@ -7,6 +7,7 @@ import Location from "./Pages/Location/Location.jsx";
 import Menu from "./Pages/Menu/Menu.jsx";
 import Sidenav from  "./Components/Sidenav/Sidenav.jsx";
 import Collaborates from './Pages/Collaborates/Collaborates.jsx'
+import Footer from './Pages/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
      <Location />
      <Menu />
      <Collaborates />
+     <Footer />
      
      
     </div>
