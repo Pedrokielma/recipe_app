@@ -4,25 +4,21 @@ import Title from '../../Components/Title/Title'
 import Forminputs from './Components/Forminputs/Forminputs'
 import icon from '../../images/big-points.png'
 import Button from '../../Components/Button/Button'
+import { useInView } from 'react-intersection-observer';
 
 
-// function Forminputs(props){
-//   return(
-//     <div>
-//       <label htmlFor={props.htmlfor}>{props.title}</label>
-//       <input type={props.type} placeholder={props.htmlfor} />
 
 
-//       <label htmlFor="password">Password</label>
-//         <input type="password" name="password" placeholder="8-10 character password" id="password" value={password} onChange={handlePassword} />
+function Colaborates(props) {
 
-//     </div>
-//   )
-// }
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
 
-function Colaborates() {
+  if(myElementIsVisible) {
+    props.changeNav('5')
+  }
+
   return (
-    <div className='clolaborate-section'>
+    <div ref={myRef} className='clolaborate-section'>
     <div className='colaborates-title'>
     <h2 className='colaborates-title-first'>COLLABORATES</h2>
     <hr className='colaborates-title-line'/>

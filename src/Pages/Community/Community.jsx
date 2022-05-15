@@ -6,12 +6,21 @@ import bigPoints from "../../images/big-points.png";
 import Posts from '../../Components/Posts/Posts'
 import Title from '../../Components/Title/Title'
 import Button from '../../Components/Button/Button'
+import { useInView } from 'react-intersection-observer';
 
 
 
-function Community() {
+function Community(props) {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
+  if(myElementIsVisible) {
+    props.changeNav('2')
+  }
+
   return (
-    <div className="community-section">
+   
+    <div ref={myRef} id="community-section">
       <div className="commuity-title">
       <hr className="title-line" />
         <Title lines='two-lines' content='MEET OUR COMMUNITY'/>

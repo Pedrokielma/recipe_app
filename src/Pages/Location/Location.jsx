@@ -1,10 +1,17 @@
 import React from 'react'
 import './Location.css'
 import Title from '../../Components/Title/Title'
+import { useInView } from 'react-intersection-observer';
 
-function Location() {
+function Location(props) {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
+  if(myElementIsVisible) {
+    props.changeNav('3')
+  }
+
   return (
-    <div>
+    <div ref={myRef} id='location'>
     <div className='text-map'>
     <Title content='LOCATION'/>
         <div> 

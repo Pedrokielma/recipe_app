@@ -4,12 +4,17 @@ import React,  { useState, useEffect}  from 'react'
 import './Menu.css'
 import Title from '../../Components/Title/Title'
 import Button from '../../Components/Button/Button'
+import { useInView } from 'react-intersection-observer';
 
 
-function Menu() {
+function Menu(props) {
   const [dishes, setDishes] = useState([]);
 
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
 
+  if(myElementIsVisible) {
+    props.changeNav('4')
+  }
  
   const fetchDishes = async () => {
     try {
@@ -30,7 +35,7 @@ function Menu() {
  
 
   return (
-    <div className='menu'>
+    <div ref={myRef} id='menu'>
     <div className="menu-title">
     <hr className="menu-title-line"/>
     <Title lines='one-line' content='OUR MENU'/>
