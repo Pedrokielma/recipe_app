@@ -1,164 +1,134 @@
-#community-section{
-    height: 120vh;
-    width: 100vw;
+#community-section {
+  height: 120vh;
+  width: 100vw;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding:0px 60px 0px 60px;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 60px 0px 60px;
 
-    background-color: rgb(244, 240, 240);
+  background-color: rgb(244, 240, 240);
 }
 
-.commuity-title{
-    position: absolute;
-   bottom: -350px;
-   left: 300px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    
+.commuity-title {
+  position: absolute;
+  bottom: -350px;
+  left: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
-.title-line{
-    border: 3px solid #FFDAC9;
-    position: absolute;
-    width: 85%;
-    top: 90px;
-    z-index: 0;
-}
-
-.commuity-title h4{
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-align: left;
+.title-line {
+  border: 3px solid #ffdac9;
+  position: absolute;
+  width: 85%;
+  top: 90px;
+  z-index: 0;
 }
 
-
-
-
-
-
-
-.community-posts{
-display: flex;
-z-index: 1;
+.commuity-title h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: left;
 }
 
-.post-one{
-    justify-content: flex-end;
-    margin: 120px 80px 0px 10px;
+.community-posts {
+  display: flex;
+  z-index: 1;
 }
 
-.post-two{
-    margin: 0px 10px 0px 70px;
-}
-.post-three{
-    justify-content: flex-end;
-    margin: 0px 65px 60px 0px;
+.post-one {
+  justify-content: flex-end;
+  margin: 120px 80px 0px 10px;
 }
 
-
-.post-content{
-    height: 230px;
-    width: 230px;
-    background-color: white;
-    margin: 0px 10px 0px 10px;
-    position: relative;
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.post-two {
+  margin: 0px 10px 0px 70px;
 }
-.post-content h5{
-    font-size: 1.4rem;
-    font-weight: 500;
-    display: flex;
-    margin: 10px;
-    margin-top: 20px;
-}
-.post-description{
-    text-align: left;
-    margin: 10px;
-   
-}
-.comments-likes-div{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-}
-.comments-likes{
-    display: flex;
-}
-.comments-likes p{
-    margin: 5px;
+.post-three {
+  justify-content: flex-end;
+  margin: 0px 65px 60px 0px;
 }
 
+.post-content {
+  height: 230px;
+  width: 230px;
+  background-color: white;
+  margin: 0px 10px 0px 10px;
+  position: relative;
 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.post-content h5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  margin: 10px;
+  margin-top: 20px;
+}
+.post-description {
+  text-align: left;
+  margin: 10px;
+}
+.comments-likes-div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.comments-likes {
+  display: flex;
+}
+.comments-likes p {
+  margin: 5px;
+}
 
-
-
-
-
-
-.image-div{
-    height: 230px;
-    width: 230px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin: 0px 10px 0px 10px;
-    
-   
-    
+.image-div {
+  height: 230px;
+  width: 230px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0px 10px 0px 10px;
 }
 /* .image-div > .insta-logo {
     justify-content: flex-end;
     align-items: center;
 } */
-.image-div .insta-logo{
-    z-index: 1;  
+.image-div .insta-logo {
+  z-index: 1;
 }
 
-.image-post{
-    height: 210px;
-    width: 210px;
-    position: absolute;
-    margin-right: 10px;
-    margin-top: 10px;
+.image-post {
+  height: 210px;
+  width: 210px;
+  position: absolute;
+  margin-right: 10px;
+  margin-top: 10px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-
-
-
-.icons-background{
-   position: absolute;  
-left: 10%;
-right: 10%;
-height: 400px;
-
+.icons-background {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 400px;
 }
-.big-points{
-    position: absolute;
-    right: 15%;
-    top: 40px;
-    
+.big-points {
+  position: absolute;
+  right: 15%;
+  top: 40px;
 }
-.lines{
-    position: absolute;
-    right: 0;
+.lines {
+  position: absolute;
+  right: 0;
 }
-.small-points{
-    position: absolute;
-    left: 4%;
-    bottom: 0;
+.small-points {
+  position: absolute;
+  left: 4%;
+  bottom: 0;
 }
-
-
-

@@ -1,10 +1,12 @@
-import React from 'react'
-import './Button.css'
+import React from "react";
+import "./Button.css";
 
-function Button(props){
+function Button(props) {
+  return (
+    <a className={props.color} link={props.herf}>
+      {props.content}
+    </a>
+  );
+}
 
-    return  <a className={props.color} link={props.herf}>{props.content}</a>
-  }
-  
-
-export default Button
+export default Button;

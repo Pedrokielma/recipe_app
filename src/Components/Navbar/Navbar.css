@@ -1,18 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  z-index: 1000;
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    position: relative;
-    z-index: 1000;
-   
-    background-color: rgba(250, 235, 215, 0);
-    position: fixed;
+  background-color: rgba(250, 235, 215, 0);
+  position: fixed;
 }
 
-.section-nav{
-    display: flex;
+.section-nav {
+  display: flex;
 }
-.nav-items{
-    margin: 20px;
+.nav-items {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-nav{
+  font-size: 2rem;
 }

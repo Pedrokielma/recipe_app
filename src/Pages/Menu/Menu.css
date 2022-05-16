@@ -1,79 +1,68 @@
-#menu{
-    height: 100vh;
-    background-color: #F8F8F8;
-   
+#menu {
+  height: 100vh;
+  background-color: #f8f8f8;
 
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 
-
-.menu-title{
-    position: absolute;
-    right: 40.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-    width: 240px;
-    z-index: 1;
+.menu-title {
+  position: absolute;
+  right: 40.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  width: 240px;
+  z-index: 1;
 }
-.menu-title-line{
-    border: 3px solid #FFDAC9;
-    position: absolute;
-    width: 100%;
-    top: 30px;
-    z-index: 0;
-}
-
-
-.menu-sections{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    
-    
-}
-.starter{
-    
-    margin-left: 100px;
-    margin-bottom: 200px; 
-}
-.main-course{
-    margin-bottom: 80px;
-}
-.side{
-    margin-bottom: 100px;
-}
-.dessert{
-    margin-right: 60px;
-    margin-bottom: 150px;
-}
-.menu-sections *{
-    margin: 5px 10px 10px 5px ;
-    
-
+.menu-title-line {
+  border: 3px solid #ffdac9;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  z-index: 0;
 }
 
-
-
-.menu-sections h4{
-display: flex;
+.menu-sections {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.menu-sections .price{
-    display: flex;
+.starter {
+  margin-left: 100px;
+  margin-bottom: 200px;
 }
-.menu-sections .description{
-    display: flex;
-    text-align: left;
+.main-course {
+  margin-bottom: 80px;
+}
+.side {
+  margin-bottom: 100px;
+}
+.dessert {
+  margin-right: 60px;
+  margin-bottom: 150px;
+}
+.menu-sections * {
+  margin: 5px 10px 10px 5px;
 }
 
-.price{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid #FFDAC9; 
-    width: 50px;
+.menu-sections h4 {
+  display: flex;
+}
+.menu-sections .price {
+  display: flex;
+}
+.menu-sections .description {
+  display: flex;
+  text-align: left;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ffdac9;
+  width: 50px;
 }

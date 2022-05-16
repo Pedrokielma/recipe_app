@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Navlink(props) {
-
-  return <a className='nav-items' href={props.href}>{props.text}</a>
+  return (
+    <a className="nav-items" href={props.href}>
+      {props.text}
+    </a>
+  );
 }
 
-export default Navlink
+export default Navlink;

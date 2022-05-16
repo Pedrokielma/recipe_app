@@ -1,20 +1,17 @@
-.footer-section{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
-.footer-section h2{
-    color:  #FFDAC9;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-.footer-section p{
-    color: #767676;;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.footer-section h2 {
+  color: #ffdac9;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
-
+.footer-section p {
+  color: #767676;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

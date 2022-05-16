@@ -1,37 +1,25 @@
 import React from "react";
 import "./Navbar.css";
 import Navlink from "./Components/Navlink";
+import { GiKiwiFruit } from "react-icons/gi";
 
-// function Navbar() {
-//   return(
-//     <nav className='navbar'>
-//     <section className='section-nav'>
-//     <Logo/>
-//     <NavLink href="#about">ABOUT</NavLink>
-//     </section>
-//     </nav>
-//   )
-// }
 
-// function NavLink({text, href}) {
-//   return <a className='nav-items' href={href}>{text}</a>
-// }
+
 
 function Navbar() {
   return (
     <>
       <nav className="navbar">
         <section className="section-nav">
-          <Navlink text="LOGO" herf="" />
-          <Navlink text="ABOUT" herf="" />
-          <Navlink text="COMMUNITY" herf="" />
-          <Navlink text="LOCATION" herf="" />
-          <Navlink text="OUR MANU" herf="" />
-          <Navlink text="RECIPES" herf="" />
+          <Navlink text={<GiKiwiFruit className="logo-nav" />} href="#home-section" />
+          <Navlink text="ABOUT" href="#clolaborate-section" />
+          <Navlink text="COMMUNITY" href="#community-section" />
+          <Navlink text="LOCATION" href="#location" />
+          <Navlink text="OUR MANU" href="#menu" />
         </section>
         <section className="section-nav">
-          <Navlink text="CONTACT" herf="" />
-          <Navlink text="LOGIN" herf="" />
+          <Navlink text="CONTACT" href="#clolaborate-section" />
+          <Navlink text="LOGIN" href="" />
         </section>
       </nav>
     </>

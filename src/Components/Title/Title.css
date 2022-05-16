@@ -1,19 +1,18 @@
-#titles{
-    font-size: 4rem;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: left;
-    z-index: 1;
-   
+#titles {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: left;
+  z-index: 1;
 }
-.one-line{
-    height: 70px;
+.one-line {
+  height: 70px;
 }
-.two-lines{
-    height: 130px;
+.two-lines {
+  height: 130px;
 }
 
-.position-titles{
-    position: relative;
-    right: 15px;
+.position-titles {
+  position: relative;
+  right: 15px;
 }

@@ -7,7 +7,7 @@ import {
   AiOutlineTwitter,
   AiFillDribbbleSquare,
 } from "react-icons/ai";
-import image from '../../images/noun-vegetables-3019268.png'
+import image from "../../images/noun-vegetables-3019268.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -30,12 +30,24 @@ function Footer() {
         <GiKiwiFruit className="footer-logo" />
         {/* <img src={image} alt="" /> */}
         <div className="div-social-icons">
-
-        <a href="https://www.facebook.com/">  <FaFacebookF className='social-icons'/></a>
-        <a href="https://twitter.com/"> <AiOutlineTwitter className='social-icons' /></a>
-        <a href="https://www.instagram.com/"><AiFillInstagram className='social-icons' /></a>
-        <a href="https://www.linkedin.com/"> <FaLinkedinIn className='social-icons' /></a>
-        <a href="https://dribbble.com/"><AiFillDribbbleSquare className='social-icons' /></a>
+          <a href="https://www.facebook.com/">
+            {" "}
+            <FaFacebookF className="social-icons" />
+          </a>
+          <a href="https://twitter.com/">
+            {" "}
+            <AiOutlineTwitter className="social-icons" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <AiFillInstagram className="social-icons" />
+          </a>
+          <a href="https://www.linkedin.com/">
+            {" "}
+            <FaLinkedinIn className="social-icons" />
+          </a>
+          <a href="https://dribbble.com/">
+            <AiFillDribbbleSquare className="social-icons" />
+          </a>
         </div>
       </div>
     </div>
