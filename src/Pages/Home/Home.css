@@ -57,6 +57,7 @@
 .request-info {
   position: absolute;
   right: 0;
+  top: 40vh;
   background-color: white;
   writing-mode: tb-rl;
   transform: rotate(-180deg);

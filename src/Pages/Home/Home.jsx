@@ -26,7 +26,7 @@ function Home(props) {
         </div>
       </div>
       <div className="request-info">
-        <a href="/">REQUEST INFO</a>
+        <a href="#clolaborate-section">REQUEST INFO</a>
       </div>
     </div>
   );
