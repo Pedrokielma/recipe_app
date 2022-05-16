@@ -5,20 +5,20 @@ import logo from "../../images/stamp.svg";
 import { useInView } from "react-intersection-observer";
 
 function Home(props) {
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: navNumber } = useInView();
 
-  if (myElementIsVisible) {
+  if (navNumber) {
     props.changeNav("1");
   }
 
   return (
-    <div ref={myRef} id="home-section">
-      <div ref={myRef} className="home-div">
+    <div  id="home-section">
+      <div  className="home-div">
         <img className="fuits-image" src={fruitsImage} alt="fruits" />
 
         <img className="logo-image" src={logo} alt="logo" />
         <div className="title">
-          <h1>
+          <h1 ref={myRef}>
             <span className="first-title">THE BEST FOODIE</span>
             <span className="second-title">EXPERIENCE</span>
           </h1>

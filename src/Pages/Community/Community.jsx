@@ -9,9 +9,9 @@ import Button from "../../Components/Button/Button";
 import { useInView } from "react-intersection-observer";
 
 function Community(props) {
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: navNumber } = useInView();
 
-  if (myElementIsVisible) {
+  if (navNumber) {
     props.changeNav("2");
   }
 
@@ -59,6 +59,7 @@ function Community(props) {
         commentsNumber="152"
         likesNumber="18,2K"
       />
+      <p ref={myRef}></p>
       <Posts
         classPost="post-three"
         imagePost="url(http://onthelist.com.br/uploads/2015/01/DSCN8295.jpg)"

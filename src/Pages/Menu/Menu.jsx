@@ -8,9 +8,9 @@ import { useInView } from "react-intersection-observer";
 function Menu(props) {
   const [dishes, setDishes] = useState([]);
 
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: navNumber } = useInView();
 
-  if (myElementIsVisible) {
+  if (navNumber) {
     props.changeNav("4");
   }
 

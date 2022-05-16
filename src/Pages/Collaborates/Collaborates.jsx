@@ -7,9 +7,9 @@ import Button from "../../Components/Button/Button";
 import { useInView } from "react-intersection-observer";
 
 function Colaborates(props) {
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: navNumber } = useInView();
 
-  if (myElementIsVisible) {
+  if (navNumber) {
     props.changeNav("5");
   }
 
