@@ -4,19 +4,16 @@ import "./Menu.css";
 import Title from "../../Components/Title/Title";
 import Button from "../../Components/Button/Button";
 import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from 'framer-motion'
+import { motion, useAnimation } from "framer-motion";
 
 function Menu(props) {
   const [dishes, setDishes] = useState([]);
-  
 
-  const animationFromBottom = useAnimation()
-  const animationFromTop = useAnimation()
-
-
+  const animationFromBottom = useAnimation();
+  const animationFromTop = useAnimation();
 
   const { ref: myRef, inView } = useInView({
-    threshold: 0.3
+    threshold: 0.3,
   });
 
   if (inView) {
@@ -40,40 +37,34 @@ function Menu(props) {
   }, []);
 
   useEffect(() => {
-      
-      if(inView){
-       
-        animationFromTop.start({
-          y : 0,
-          transition: {
-            duration: 1
-          }
-        })
-      
-        animationFromBottom.start({
-          y : 0,
-          transition: {
-            duration: 1
-          },
-        })
-        
-      
-      }else{
-        animationFromTop.start({
-          y: '-100vw',
-          transition: {
-            duration: 2
-          }
-        })
-        animationFromBottom.start({
-          y: '100vw',
-          transition: {
-            duration: 2
-          }
-        })
-      }
-    
-    
+    if (inView) {
+      animationFromTop.start({
+        y: 0,
+        transition: {
+          duration: 1,
+        },
+      });
+
+      animationFromBottom.start({
+        y: 0,
+        transition: {
+          duration: 1,
+        },
+      });
+    } else {
+      animationFromTop.start({
+        y: "-100vw",
+        transition: {
+          duration: 2,
+        },
+      });
+      animationFromBottom.start({
+        y: "100vw",
+        transition: {
+          duration: 2,
+        },
+      });
+    }
   }, [inView]);
 
   return (
@@ -84,9 +75,7 @@ function Menu(props) {
         <Button color="pink-button" link="/" content="KNOW MORE" />
       </div>
 
-      <motion.div
-      animate= {animationFromTop}
-      className="menu-sections starter">
+      <motion.div animate={animationFromTop} className="menu-sections starter">
         <Title lines="one-line position-titles" content="STARTERS" />
 
         {dishes.map((dishe) => {
@@ -103,8 +92,9 @@ function Menu(props) {
       <hr />
 
       <motion.div
-      animate= {animationFromBottom}
-      className="menu-sections main-course">
+        animate={animationFromBottom}
+        className="menu-sections main-course"
+      >
         <Title lines="two-lines position-titles" content="MAIN COURSES" />
 
         {dishes.map((dishe) => {
@@ -119,9 +109,7 @@ function Menu(props) {
         })}
       </motion.div>
       <hr />
-      <motion.div
-       animate= {animationFromTop}
-      className="menu-sections side">
+      <motion.div animate={animationFromTop} className="menu-sections side">
         <Title lines="one-line position-titles" content="SIDES" />
         {dishes.map((dishe) => {
           if (dishe.type === "sides")
@@ -136,8 +124,9 @@ function Menu(props) {
       </motion.div>
       <hr />
       <motion.div
-      animate= {animationFromBottom}
-      className="menu-sections dessert">
+        animate={animationFromBottom}
+        className="menu-sections dessert"
+      >
         <Title lines="one-line position-titles" content="DESSERTS" />
 
         {dishes.map((dishe) => {

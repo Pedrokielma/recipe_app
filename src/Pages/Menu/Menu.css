@@ -18,6 +18,7 @@
   width: 240px;
   z-index: 1;
 }
+
 .menu-title-line {
   border: 3px solid #ffdac9;
   position: absolute;
@@ -32,20 +33,25 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .starter {
   margin-left: 100px;
   margin-bottom: 200px;
 }
+
 .main-course {
   margin-bottom: 80px;
 }
+
 .side {
   margin-bottom: 100px;
 }
+
 .dessert {
   margin-right: 60px;
   margin-bottom: 150px;
 }
+
 .menu-sections * {
   margin: 5px 10px 10px 5px;
 }
@@ -53,9 +59,11 @@
 .menu-sections h4 {
   display: flex;
 }
+
 .menu-sections .price {
   display: flex;
 }
+
 .menu-sections .description {
   display: flex;
   text-align: left;

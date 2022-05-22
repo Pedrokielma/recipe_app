@@ -10,7 +10,7 @@
   z-index: 1000;
 }
 
-.side-navbar div{
+.side-navbar div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,7 @@
   margin: 10px;
   z-index: 1;
 }
-.active-hr{
+.active-hr {
   border: 1px solid black;
   width: 30px;
   margin: 10px;

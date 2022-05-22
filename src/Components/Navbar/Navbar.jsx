@@ -15,7 +15,7 @@ function Navbar() {
           <Navlink text="ABOUT" href="#clolaborate-section" />
           <Navlink text="COMMUNITY" href="#community-section" />
           <Navlink text="LOCATION" href="#location" />
-          <Navlink text="OUR MANU" href="#menu" />
+          <Navlink text="OUR MENU" href="#menu" />
         </section>
         <section className="section-nav">
           <Navlink text="CONTACT" href="#clolaborate-section" />
