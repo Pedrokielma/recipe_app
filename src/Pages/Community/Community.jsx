@@ -16,7 +16,7 @@ function Community(props) {
 
 
   const { ref: myRef, inView } = useInView({
-    threshold: 0.8
+    threshold: 0.6
   });
 
   if (inView) {
@@ -72,7 +72,7 @@ const animationFunction = ((speed) => {
         animationFunction={animationFunction}
         animation={animationFromBottom}
         inView={inView}
-        speed='1'
+        speed='0.6'
         classPost="post-one"
         imagePost="url(https://www.milesteaandcoffee.com/userfiles/article/5d230fb19491a-tacos.jpg)"
         instaUser="@love_food"
@@ -88,7 +88,7 @@ const animationFunction = ((speed) => {
       animationFunction={animationFunction}
         animation={animationFromBottom}
         inView={inView}
-        speed='1.3'
+        speed='0.8'
         classPost="post-two"
         imagePost="url(https://www.kyleecooks.com/wp-content/uploads/2020/11/Oatmeal-Waffles-SQ-1.jpg)"
         instaUser="@love_food"
@@ -103,7 +103,7 @@ const animationFunction = ((speed) => {
       animationFunction={animationFunction}
         animation={animationFromBottom}
         inView={inView}
-        speed='1.6'
+        speed='0.8'
         classPost="post-three"
         imagePost="url(http://onthelist.com.br/uploads/2015/01/DSCN8295.jpg)"
         instaUser="buzzfeedfood"

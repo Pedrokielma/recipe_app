@@ -11,9 +11,8 @@ function Menu(props) {
   
 
   const animationFromBottom = useAnimation()
-  const exitToBottom = useAnimation()
   const animationFromTop = useAnimation()
-  const exitToTop = useAnimation()
+
 
 
   const { ref: myRef, inView } = useInView({
@@ -50,18 +49,14 @@ function Menu(props) {
             duration: 1
           }
         })
-        exitToTop.start({
-           y: '-100vw'
-        })
+      
         animationFromBottom.start({
           y : 0,
           transition: {
             duration: 1
           },
         })
-        exitToBottom.start({
-          y: '-100vw'
-       })
+        
       
       }else{
         animationFromTop.start({
@@ -91,7 +86,6 @@ function Menu(props) {
 
       <motion.div
       animate= {animationFromTop}
-      exit={exitToBottom}
       className="menu-sections starter">
         <Title lines="one-line position-titles" content="STARTERS" />
 

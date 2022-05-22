@@ -9,12 +9,7 @@
   position: fixed;
   z-index: 1000;
 }
-.side-navbar hr {
-  border: 1px solid black;
-  width: 30px;
-  margin: 10px;
-  z-index: 1;
-}
+
 .side-navbar div{
   display: flex;
   flex-direction: column;
@@ -26,6 +21,19 @@
   position: absolute;
   z-index: 0;
   bottom: 50%;
+}
+
+.inactive-hr {
+  border: 1px solid black;
+  width: 20px;
+  margin: 10px;
+  z-index: 1;
+}
+.active-hr{
+  border: 1px solid black;
+  width: 30px;
+  margin: 10px;
+  z-index: 1;
 }
 .one {
   bottom: 54.5%;
