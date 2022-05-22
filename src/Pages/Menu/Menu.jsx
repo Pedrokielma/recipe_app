@@ -42,7 +42,7 @@ function Menu(props) {
     if(firstAnimation){
       
       if(inView){
-        setFirstAnimation(false)
+        // setFirstAnimation(false)
         animationFromBottom.start({
           y : 0,
           transition: {

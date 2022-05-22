@@ -29,7 +29,7 @@ function Community(props) {
   useEffect(() => {
  if(stopAnimation){   
    if(inView){
-      setStopAnimation(false)
+      // setStopAnimation(false)
       animationFromBottom.start({
         y : 0,
         transition: {
