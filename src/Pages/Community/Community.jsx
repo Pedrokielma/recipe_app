@@ -11,12 +11,12 @@ import { useAnimation } from 'framer-motion'
 
 function Community(props) {
   const animationFromBottom = useAnimation()
-  const [stopAnimation, setStopAnimation] = useState(true)
+  
 
 
 
   const { ref: myRef, inView } = useInView({
-    threshold: 0.4
+    threshold: 0.8
   });
 
   if (inView) {
@@ -24,25 +24,27 @@ function Community(props) {
   }
 
 
+const animationFunction = ((speed) => {
+  if(inView){
+      
+    animationFromBottom.start({
+      y : 0,
+      transition: {
+        duration: speed
+      }
+    })
+  }else{
 
+    animationFromBottom.start({
+      y: '100vw',
+      transition: {
+        duration: 1
+      }
+    })
+}
+})
 
-  useEffect(() => {
- if(stopAnimation){   
-   if(inView){
-      // setStopAnimation(false)
-      animationFromBottom.start({
-        y : 0,
-        transition: {
-          duration: 1
-        }
-      })
-    }else{
-
-      animationFromBottom.start({y: '100vw'})
-    }
-  }
-    
-  }, [inView]);
+  
 
   return (
     <div ref={myRef}  id="community-section">
@@ -67,7 +69,10 @@ function Community(props) {
       </div>
       
       <Posts
+        animationFunction={animationFunction}
         animation={animationFromBottom}
+        inView={inView}
+        speed='1'
         classPost="post-one"
         imagePost="url(https://www.milesteaandcoffee.com/userfiles/article/5d230fb19491a-tacos.jpg)"
         instaUser="@love_food"
@@ -80,7 +85,10 @@ function Community(props) {
       />
       
       <Posts
-      animation={animationFromBottom}
+      animationFunction={animationFunction}
+        animation={animationFromBottom}
+        inView={inView}
+        speed='1.3'
         classPost="post-two"
         imagePost="url(https://www.kyleecooks.com/wp-content/uploads/2020/11/Oatmeal-Waffles-SQ-1.jpg)"
         instaUser="@love_food"
@@ -92,7 +100,10 @@ function Community(props) {
       />
       {/* <p ref={myRef}></p> */}
       <Posts
-      animation={animationFromBottom}
+      animationFunction={animationFunction}
+        animation={animationFromBottom}
+        inView={inView}
+        speed='1.6'
         classPost="post-three"
         imagePost="url(http://onthelist.com.br/uploads/2015/01/DSCN8295.jpg)"
         instaUser="buzzfeedfood"

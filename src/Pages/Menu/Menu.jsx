@@ -8,15 +8,17 @@ import { motion, useAnimation } from 'framer-motion'
 
 function Menu(props) {
   const [dishes, setDishes] = useState([]);
-
-  const [firstAnimation, setFirstAnimation] = useState(true);
   
 
-  const animationFromTop = useAnimation()
   const animationFromBottom = useAnimation()
+  const exitToBottom = useAnimation()
+  const animationFromTop = useAnimation()
+  const exitToTop = useAnimation()
 
 
-  const { ref: myRef, inView } = useInView();
+  const { ref: myRef, inView } = useInView({
+    threshold: 0.3
+  });
 
   if (inView) {
     props.changeNav("4");
@@ -39,29 +41,43 @@ function Menu(props) {
   }, []);
 
   useEffect(() => {
-    if(firstAnimation){
       
       if(inView){
-        // setFirstAnimation(false)
-        animationFromBottom.start({
-          y : 0,
-          transition: {
-            duration: 1
-          }
-        })
+       
         animationFromTop.start({
           y : 0,
           transition: {
             duration: 1
           }
         })
+        exitToTop.start({
+           y: '-100vw'
+        })
+        animationFromBottom.start({
+          y : 0,
+          transition: {
+            duration: 1
+          },
+        })
+        exitToBottom.start({
+          y: '-100vw'
+       })
       
       }else{
-        animationFromBottom.start({y: '100vw'})
-        animationFromTop.start({y: '-100vw'})
-        console.log('epa', firstAnimation)
+        animationFromTop.start({
+          y: '-100vw',
+          transition: {
+            duration: 2
+          }
+        })
+        animationFromBottom.start({
+          y: '100vw',
+          transition: {
+            duration: 2
+          }
+        })
       }
-    }
+    
     
   }, [inView]);
 
@@ -74,7 +90,8 @@ function Menu(props) {
       </div>
 
       <motion.div
-      animate= {animationFromBottom}
+      animate= {animationFromTop}
+      exit={exitToBottom}
       className="menu-sections starter">
         <Title lines="one-line position-titles" content="STARTERS" />
 
@@ -92,7 +109,7 @@ function Menu(props) {
       <hr />
 
       <motion.div
-      animate= {animationFromTop}
+      animate= {animationFromBottom}
       className="menu-sections main-course">
         <Title lines="two-lines position-titles" content="MAIN COURSES" />
 
@@ -109,7 +126,7 @@ function Menu(props) {
       </motion.div>
       <hr />
       <motion.div
-       animate= {animationFromBottom}
+       animate= {animationFromTop}
       className="menu-sections side">
         <Title lines="one-line position-titles" content="SIDES" />
         {dishes.map((dishe) => {
@@ -125,7 +142,7 @@ function Menu(props) {
       </motion.div>
       <hr />
       <motion.div
-      animate= {animationFromTop}
+      animate= {animationFromBottom}
       className="menu-sections dessert">
         <Title lines="one-line position-titles" content="DESSERTS" />
 

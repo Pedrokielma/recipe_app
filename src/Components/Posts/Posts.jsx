@@ -1,17 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Posts.css";
 import insta from "../../images/pink-instagram.svg";
 import comment from "../../images/comments-icon.svg";
 import like from "../../images/like-icon.svg";
 import { motion } from 'framer-motion'
 
+
 function Posts(props) {
   const postImages = {
     backgroundImage: props.imagePost,
   };
 
+
+
+  useEffect(() => {
+   
+    props.animationFunction(props.speed)
+    
+  }, [props.inView]);
+
   return (
     <motion.div 
+    initial={false}
     animate={props.animation}
     className={props.classPost}>
       <div className="image-div">

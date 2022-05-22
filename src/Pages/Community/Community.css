@@ -2,6 +2,7 @@
   height: 120vh;
   width: 100vw;
 
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

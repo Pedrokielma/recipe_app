@@ -4,6 +4,7 @@
   line-height: 60px;
   text-align: left;
   z-index: 1;
+  overflow: hidden;
 }
 .one-line {
   height: 70px;
