@@ -3,6 +3,7 @@ import "./Posts.css";
 import insta from "../../images/pink-instagram.svg";
 import comment from "../../images/comments-icon.svg";
 import like from "../../images/like-icon.svg";
+import { motion } from 'framer-motion'
 
 function Posts(props) {
   const postImages = {
@@ -10,7 +11,9 @@ function Posts(props) {
   };
 
   return (
-    <div className={props.classPost}>
+    <motion.div 
+    animate={props.animation}
+    className={props.classPost}>
       <div className="image-div">
         <img className="insta-logo" src={insta} alt="insta" />
         <div className="image-post" style={postImages} />
@@ -30,7 +33,7 @@ function Posts(props) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

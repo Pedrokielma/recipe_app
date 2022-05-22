@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Community.css";
 import lines from "../../images/lines.png";
 import smallPoints from "../../images/small-points.png";
@@ -7,16 +7,45 @@ import Posts from "../../Components/Posts/Posts";
 import Title from "../../Components/Title/Title";
 import Button from "../../Components/Button/Button";
 import { useInView } from "react-intersection-observer";
+import { useAnimation } from 'framer-motion'
 
 function Community(props) {
-  const { ref: myRef, inView: navNumber } = useInView();
+  const animationFromBottom = useAnimation()
+  const [stopAnimation, setStopAnimation] = useState(true)
 
-  if (navNumber) {
+
+
+  const { ref: myRef, inView } = useInView({
+    threshold: 0.4
+  });
+
+  if (inView) {
     props.changeNav("2");
   }
 
+
+
+
+  useEffect(() => {
+ if(stopAnimation){   
+   if(inView){
+      setStopAnimation(false)
+      animationFromBottom.start({
+        y : 0,
+        transition: {
+          duration: 1
+        }
+      })
+    }else{
+
+      animationFromBottom.start({y: '100vw'})
+    }
+  }
+    
+  }, [inView]);
+
   return (
-    <div  id="community-section">
+    <div ref={myRef}  id="community-section">
       <div className="commuity-title">
         <hr className="title-line" />
         <Title lines="two-lines" content="MEET OUR COMMUNITY" />
@@ -36,8 +65,9 @@ function Community(props) {
           alt="icon"
         />
       </div>
-
+      
       <Posts
+        animation={animationFromBottom}
         classPost="post-one"
         imagePost="url(https://www.milesteaandcoffee.com/userfiles/article/5d230fb19491a-tacos.jpg)"
         instaUser="@love_food"
@@ -50,6 +80,7 @@ function Community(props) {
       />
       
       <Posts
+      animation={animationFromBottom}
         classPost="post-two"
         imagePost="url(https://www.kyleecooks.com/wp-content/uploads/2020/11/Oatmeal-Waffles-SQ-1.jpg)"
         instaUser="@love_food"
@@ -59,8 +90,9 @@ function Community(props) {
         commentsNumber="152"
         likesNumber="18,2K"
       />
-      <p ref={myRef}></p>
+      {/* <p ref={myRef}></p> */}
       <Posts
+      animation={animationFromBottom}
         classPost="post-three"
         imagePost="url(http://onthelist.com.br/uploads/2015/01/DSCN8295.jpg)"
         instaUser="buzzfeedfood"

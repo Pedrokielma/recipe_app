@@ -4,13 +4,21 @@ import "./Menu.css";
 import Title from "../../Components/Title/Title";
 import Button from "../../Components/Button/Button";
 import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from 'framer-motion'
 
 function Menu(props) {
   const [dishes, setDishes] = useState([]);
 
-  const { ref: myRef, inView: navNumber } = useInView();
+  const [firstAnimation, setFirstAnimation] = useState(true);
+  
 
-  if (navNumber) {
+  const animationFromTop = useAnimation()
+  const animationFromBottom = useAnimation()
+
+
+  const { ref: myRef, inView } = useInView();
+
+  if (inView) {
     props.changeNav("4");
   }
 
@@ -30,6 +38,33 @@ function Menu(props) {
     fetchDishes();
   }, []);
 
+  useEffect(() => {
+    if(firstAnimation){
+      
+      if(inView){
+        setFirstAnimation(false)
+        animationFromBottom.start({
+          y : 0,
+          transition: {
+            duration: 1
+          }
+        })
+        animationFromTop.start({
+          y : 0,
+          transition: {
+            duration: 1
+          }
+        })
+      
+      }else{
+        animationFromBottom.start({y: '100vw'})
+        animationFromTop.start({y: '-100vw'})
+        console.log('epa', firstAnimation)
+      }
+    }
+    
+  }, [inView]);
+
   return (
     <div ref={myRef} id="menu">
       <div className="menu-title">
@@ -38,7 +73,9 @@ function Menu(props) {
         <Button color="pink-button" link="/" content="KNOW MORE" />
       </div>
 
-      <div className="menu-sections starter">
+      <motion.div
+      animate= {animationFromBottom}
+      className="menu-sections starter">
         <Title lines="one-line position-titles" content="STARTERS" />
 
         {dishes.map((dishe) => {
@@ -51,10 +88,12 @@ function Menu(props) {
               </>
             );
         })}
-      </div>
+      </motion.div>
       <hr />
 
-      <div className="menu-sections main-course">
+      <motion.div
+      animate= {animationFromTop}
+      className="menu-sections main-course">
         <Title lines="two-lines position-titles" content="MAIN COURSES" />
 
         {dishes.map((dishe) => {
@@ -67,9 +106,11 @@ function Menu(props) {
               </>
             );
         })}
-      </div>
+      </motion.div>
       <hr />
-      <div className="menu-sections side">
+      <motion.div
+       animate= {animationFromBottom}
+      className="menu-sections side">
         <Title lines="one-line position-titles" content="SIDES" />
         {dishes.map((dishe) => {
           if (dishe.type === "sides")
@@ -81,9 +122,11 @@ function Menu(props) {
               </>
             );
         })}
-      </div>
+      </motion.div>
       <hr />
-      <div className="menu-sections dessert">
+      <motion.div
+      animate= {animationFromTop}
+      className="menu-sections dessert">
         <Title lines="one-line position-titles" content="DESSERTS" />
 
         {dishes.map((dishe) => {
@@ -96,7 +139,7 @@ function Menu(props) {
               </>
             );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }

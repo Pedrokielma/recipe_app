@@ -1,5 +1,7 @@
 // import { useRef, useEffect, useState } from 'react';
 import "./Sidenav.css";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from 'framer-motion'
 
 function Sidenav(props) {
   const divStyle = {
@@ -8,47 +10,92 @@ function Sidenav(props) {
 
   return (
     <nav className="side-navbar">
-      <hr />
+    <motion.div>
+   
       {props.number == "1" ? (
+       <>
+       <hr />
         <p className="numbers-marc one">1</p>
+      </>
       ) : (
+        <>
+        <hr />
         <p className="numbers-marc one" style={divStyle}>
           1
         </p>
+        </>
       )}
-      <hr />
+    </motion.div>
+      
+      <motion.div>
+     
       {props.number == "2" ? (
-        <p className="numbers-marc two">2</p>
+       <>
+       <hr />
+        <p className="numbers-marc two">2</p>    
+      </>
       ) : (
+  <>
+  <hr />
         <p className="numbers-marc two" style={divStyle}>
           2
-        </p>
+          </p>
+        </>
       )}
+      </motion.div>
 
-      <hr />
+      <motion.div>
+     
       {props.number == "3" ? (
+       <>
+       <hr />
         <p className="numbers-marc three">3</p>
+      </>
       ) : (
+<>
+<hr />
         <p className="numbers-marc three" style={divStyle}>
           3
-        </p>
+          </p>
+      </>  
       )}
-      <hr />
+      </motion.div>
+
+      <motion.div>
+     
       {props.number == "4" ? (
+       <>
+       <hr />
         <p className="numbers-marc four">4</p>
-      ) : (
+      </>
+      ): (
+<>
+<hr />
         <p className="numbers-marc four" style={divStyle}>
           4
-        </p>
+          </p>
+      </>  
       )}
-      <hr />
+      </motion.div>
+    
+     <motion.div>
+    
       {props.number == "5" ? (
+       <>
+       <hr />
         <p className="numbers-marc five">5</p>
+      </>
       ) : (
+        <>
+        <hr />
         <p className="numbers-marc five" style={divStyle}>
           5
         </p>
+        </>
       )}
+      
+     </motion.div>
+     
     </nav>
   );
 }

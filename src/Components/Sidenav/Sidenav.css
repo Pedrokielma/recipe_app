@@ -15,6 +15,12 @@
   margin: 10px;
   z-index: 1;
 }
+.side-navbar div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .numbers-marc {
   position: absolute;
