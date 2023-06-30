@@ -1,4 +1,4 @@
-# Receipt.com #
+# Recipe.com #
 
 ![picture alt](https://articlezone24.com/wp-content/uploads/2022/05/Healthy-Food-Products-Made-From-Organic-Ingredients.png "Title is optional")
 
